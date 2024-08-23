@@ -1,7 +1,5 @@
 import {useState} from "react";
-import logo from './logo.svg';
 import './App.css';
-import { Router } from 'react-router-dom';
 import {Routes,Route} from "react-router-dom";
 import ProductAll from './page/ProductAll';
 import Login from './page/Login';
@@ -21,13 +19,13 @@ import PrivateRoute from "./route/PrivateRoute";
 //8.로그인을 하면 로그아웃이 보이고 로그아웃을 하면 로그인이 보인다.
 //9.상품을 검색할 수 있다.
 function App() {
-  const[authenticate,setAuthenticate]=useState(false) //true면 로그인이 됨 false면 로그인 안됨
+  const[authenticate,setAuthenticate]=useState(false); //true면 로그인이 됨 false면 로그인 안됨
 
 
 
   return (
     <div >
-      <Navbar/>
+      <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
       <Routes>
         <Route path="/" element={<ProductAll/>}/>
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate}/>}/>

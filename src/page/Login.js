@@ -12,7 +12,7 @@ const Login = ({setAuthenticate}) => {
     return (
         <div>
             <form onSubmit={(event)=>loginUser(event)} className="login">
-                <h1 class="login-title">Login</h1>
+                <h1 className="login-title">Login</h1>
                 <label>ID</label>
                 <input
                     name="username"
