@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## nelify
 
-In the project directory, you can run:
+(https://heartfelt-lamington-eadacc.netlify.app/)
 
 ### `npm start`
 
